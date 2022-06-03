@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>Sitecore CDP and Personalize Sandbox</title>
+
+    <link rel="stylesheet" href="styles/site.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>Sitecore CDP and Personalize Sandbox</h1>
+    <p>A simple website that can be used to learn and experiment with Sitecore CDP and Personalize in a sandbox
+        environment.
+    </p>
+
+    <div id="login-container">
+        <h3>Login</h3>
+        <label>First Name</label>
+        <input id="first-name-input" type="text" value="TestFirst" />
+        <label>Last Name</label>
+        <input id="last-name-input" type="text" value="TestLast" />
+        <label>Email</label>
+        <input id="email-input" type="text" value="testfirst.testlast@test.com" />
+        <button id="login-button">Login</button>
+    </div>
+
+    <div id="products-container">
+        <h3>Products</h3>
+        <div id="all-products">
+            <div class="product">
+                <h4>Awesome Product 001</h4>
+                <p><strong>Cost: </strong> $99.99</p>
+                <p><strong>Details: </strong> A really awesome product that you need more than anything.</p>
+                <button id="add-to-order-product-001-button">Add to Order</button>
+            </div>
+            <div class="product">
+                <h4>Awesome Product 002</h4>
+                <p><strong>Cost: </strong> $149.99</p>
+                <p><strong>Details: </strong> A more awesome product that you need even more than anything.</p>
+                <button id="add-to-order-product-002-button">Add to Order</button>
+            </div>
+            <div class="product">
+                <h4>Awesome Product 003</h4>
+                <p><strong>Cost: </strong> $199.99</p>
+                <p><strong>Details: </strong> The most awesome product that you need above all else.</p>
+                <button id="add-to-order-product-003-button">Add to Order</button>
+            </div>
+        </div>
+        <div id="checkout-container">
+            <button id="cancel-order-button">Cancel Order</button>
+            <button id="confirm-order-button">Confirm Order</button>
+            <button id="checkout-button">Checkout</button>
+        </div>
+    </div>
+
+    <div id="debug-info-container">
+        <h3>Debug Info</h3>
+        <p><strong>Browser ID: </strong> <span id="debug-browser-id">N/A</span></p>
+        <p><strong>Bucket ID: </strong> <span id="debug-bucket-id">N/A</span></p>
+        <p><strong>Current User Email: </strong> <span id="debug-email">N/A</span></p>
+        <p><strong>Current User Full Name: </strong> <span id="debug-full-name">N/A</span></p>
+        <div id="debug-log-container">
+            <h4>Debug Log</h4>
+            <div id="debug-log">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/boxever.js"></script>
+    <script src="scripts/sitecore-cdp-and-personalize-service.js"></script>
+    <script src="scripts/event-handlers.js"></script>
+</body>
+
+</html>

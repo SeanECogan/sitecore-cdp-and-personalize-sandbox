@@ -1,0 +1,38 @@
+h3, h4 {
+    margin-top: 0.25em;
+}
+
+#login-container, #products-container {
+    margin-bottom: 2em;
+}
+
+#login-container input {
+    margin-right: 0.5em;
+}
+
+#all-products {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.product {
+    width: 40%;
+    border: 1px solid black;
+    display: block;
+    margin-right: 1em;
+    padding: 1em;
+}
+
+.product:last-of-type {
+    margin-right: 0;
+}
+
+#debug-info-container, #debug-log-container {
+    border: 1px solid black;
+    padding: 1em;
+}
+
+#debug-log {
+    font-family: monospace;
+}
