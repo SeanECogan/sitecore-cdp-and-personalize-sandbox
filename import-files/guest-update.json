@@ -1,0 +1,1 @@
+{ "ref": "3b17d2b5-0d6b-4fd3-88f0-175e7084e910", "schema": "guest", "mode": "upsert", "value": { "firstName": "Jonathan", "lastName": "Testerino", "email": "john.tester@test.com", "extensions": [ { "name": "ext", "key": "default", "loyaltytier": "level3", "rewardBalance": "70125" } ] } }
