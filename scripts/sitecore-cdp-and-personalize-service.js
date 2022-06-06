@@ -76,6 +76,7 @@ function logIdentity() {
                 if (data.status === 'OK') {
                     $('#login-container').hide();
                     $('#products-container').show();
+                    $('#interactive-experience-button').show();
                 }
             },
             'json');
@@ -173,6 +174,28 @@ function logCheckout() {
             },
             'json');
     });
+}
+
+function callInteractiveExperience() {
+    var callFlowsContext = {
+        context: {
+          "channel": commonParams.channel,
+          "language": commonParams.language,
+          "currencyCode": commonParams.currency,
+          "pointOfSale": _boxever_settings.pointOfSale,
+          "browserId": Boxever.getID(),
+          "clientKey": _boxever_settings.client_key,   
+          "friendlyId": "sean_interactive_experience"
+        }
+      };
+      
+      Boxever.callFlows(callFlowsContext, function(response) {
+        if (response) {
+            var debugLogMessage = "Interactive Experience returned object with title: " + response.title + ", firstName: " + response.firstName + ", lastName: " + response.lastName + ".";
+
+            addDebugLogMessage(debugLogMessage);
+        }
+      }, 'json');
 }
 
 function addDebugLogMessage(message) {

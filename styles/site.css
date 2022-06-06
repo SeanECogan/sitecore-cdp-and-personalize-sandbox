@@ -28,9 +28,13 @@ h3, h4 {
     margin-right: 0;
 }
 
-#debug-info-container, #debug-log-container {
+#debug-info-container, #debug-actions-container, #debug-log-container {
     border: 1px solid black;
     padding: 1em;
+}
+
+#debug-actions-container {
+    margin-bottom: 2em;
 }
 
 #debug-log {

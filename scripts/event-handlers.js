@@ -4,6 +4,7 @@ $(document).ready(function () {
     $('#cancel-order-button').hide();
     $('#confirm-order-button').hide();
     $('#checkout-button').hide();
+    $('#interactive-experience-button').hide();
 
     initializeBoxever();
 
@@ -36,4 +37,8 @@ $('#confirm-order-button').click(function () {
 
 $('#checkout-button').click(function () {
     logCheckout();
+});
+
+$('#interactive-experience-button').click(function () {
+    callInteractiveExperience();
 });
